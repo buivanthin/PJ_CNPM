@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51DAC0F7-D3FF-426E-9C46-B1BDA9CF8D5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PJ_CNPM</RootNamespace>
+    <AssemblyName>PJ_CNPM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controler\CTR.cs" />
+    <Compile Include="Controler\info_GV.cs" />
+    <Compile Include="frm_DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DoiMatKhau.Designer.cs">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KhoiLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KhoiLop.Designer.cs">
+      <DependentUpon>frm_KhoiLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database.cs" />
+    <Compile Include="Model\DataProvider.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.Designer.cs">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_DoiMatKhau.resx">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KhoiLop.resx">
+      <DependentUpon>frm_KhoiLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frm_main.resx">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\add.png" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\chuyenlop.png" />
+    <Content Include="images\dangnhap.png" />
+    <Content Include="images\dangxuat.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\diem.png" />
+    <Content Include="images\doimatkhau.png" />
+    <Content Include="images\dsgiaovien.png" />
+    <Content Include="images\dshocsinh.png" />
+    <Content Include="images\exit.png" />
+    <Content Include="images\giaovien.png" />
+    <Content Include="images\ketqua.png" />
+    <Content Include="images\pupils.png" />
+    <Content Include="images\quanlynguoidung.png" />
+    <Content Include="images\refresh.png" />
+    <Content Include="images\start.png" />
+    <Content Include="images\thoat.png" />
+    <Content Include="images\xemdiem.png" />
+    <Content Include="images\xoachuyenlop.png" />
+    <None Include="Resources\xoachuyenlop.png" />
+    <None Include="Resources\xeploai.png" />
+    <None Include="Resources\xemdiem.png" />
+    <None Include="Resources\tttruonghoc.png" />
+    <None Include="Resources\tracuuhocsinh.png" />
+    <None Include="Resources\tracuugiaovien.png" />
+    <None Include="Resources\tongiao.png" />
+    <None Include="Resources\thongtinphanmem.png" />
+    <None Include="Resources\thoat.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\splash1.png" />
+    <None Include="Resources\splash.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\saoluudulieu.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\quanlynguoidung.png" />
+    <None Include="Resources\qdthangdiem.png" />
+    <None Include="Resources\qdsiso.png" />
+    <None Include="Resources\qddotuoi.png" />
+    <None Include="Resources\pupils.png" />
+    <None Include="Resources\phuchoidulieu.png" />
+    <None Include="Resources\phanlop.png" />
+    <None Include="Resources\phancong.png" />
+    <None Include="Resources\nghenghiep.png" />
+    <None Include="Resources\namhoc.png" />
+    <None Include="Resources\monhoc.png" />
+    <None Include="Resources\luuchuyenlop.png" />
+    <None Include="Resources\lophoc.png" />
+    <None Include="Resources\loginimage.png" />
+    <None Include="Resources\loainguoidung.png" />
+    <None Include="Resources\kqhockytheomon.png" />
+    <None Include="Resources\kqhockytheolop.png" />
+    <None Include="Resources\kqcnamtheomon.png" />
+    <None Include="Resources\kqcnamtheolop.png" />
+    <None Include="Resources\khoilop.png" />
+    <None Include="Resources\ketqua.png" />
+    <None Include="Resources\huongdan.png" />
+    <None Include="Resources\hocsinh.png" />
+    <None Include="Resources\hocluc.png" />
+    <None Include="Resources\hocky.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\hanhkiem.png" />
+    <None Include="Resources\giaovien.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\dslophoc.png" />
+    <None Include="Resources\dshocsinh.png" />
+    <None Include="Resources\dsgiaovien.png" />
+    <None Include="Resources\doimatkhaucontext.png" />
+    <None Include="Resources\doimatkhau.png" />
+    <None Include="Resources\diem.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\dantoc.png" />
+    <None Include="Resources\dangxuatcontext.png" />
+    <None Include="Resources\dangxuat.png" />
+    <None Include="Resources\dangnhapcontext.png" />
+    <None Include="Resources\dangnhap.png" />
+    <None Include="Resources\connection.png" />
+    <None Include="Resources\closephanlop.png" />
+    <None Include="Resources\chuyenlop.png" />
+    <None Include="Resources\cachnhapdiem.png" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

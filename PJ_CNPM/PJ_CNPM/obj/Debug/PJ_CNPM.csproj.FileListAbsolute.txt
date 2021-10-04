@@ -1,0 +1,13 @@
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\bin\Debug\PJ_CNPM.exe.config
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\bin\Debug\PJ_CNPM.exe
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\bin\Debug\PJ_CNPM.pdb
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.Properties.Resources.resources
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.frm_login.resources
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.View.frm_main.resources
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.csproj.GenerateResource.cache
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.csproj.CoreCompileInputs.cache
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.exe
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.pdb
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.csproj.AssemblyReference.cache
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.frm_DoiMatKhau.resources
+D:\PJ_CNPM\PJ_CNPM\PJ_CNPM\obj\Debug\PJ_CNPM.frm_KhoiLop.resources
