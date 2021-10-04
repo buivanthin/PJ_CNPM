@@ -18,7 +18,7 @@ namespace PJ_CNPM.Model
         SqlConnection con;
         SqlDataAdapter dap;
         // string connectionString = ConfigurationManager.ConnectionStrings["KN"].ConnectionString.ToString();
-        string connectionString = "Data Source=DESKTOP-G1PNFLH\\SQLEXPRESS;Initial Catalog=QL_THPT;Integrated Security=True";
+        string connectionString = "Data Source=LAP;Initial Catalog=QL_THPT;Integrated Security=True";
 
         public bool connect()
         {
@@ -30,7 +30,7 @@ namespace PJ_CNPM.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Loi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }
